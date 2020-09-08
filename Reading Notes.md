@@ -1,3 +1,38 @@
+## Due 9/8
+
+- Computer Basics
+
+1. CPU is the brain of a computer
+2. RAM is the short term memory
+3. Hard drive is long term storage
+4. The motherboard is where everything in the computer connect to
+5. The OS is used to control the computer
+
+- Introduction to PostgreSQL Insert
+
+1. INSERT lets you add a new row onto a table
+2. PostgreSQL will get an error if any colum data is missing.
+3. If you need a single quote in a string, use two single quotes
+4. Dates are added as YYY-MM-DD
+
+- PostgreSQL SELECT
+
+1. SELECT queries data from a table
+2. You can select data from specific or all columns
+3. You can format the data using || to concat
+
+- PostgreSQL UPDATE
+
+1. Update modifies data on a table
+2. If WHERE is not included, update will modify all rows
+
+- PostgreSQL DELETE
+
+1. DELETE deletes one or more rows from a table
+2. RETURNING will show the deleted rows
+3. Delete only changes the data, ALTER TABLE is used to change the structure of the table
+4. Multiple rows can be deleted at a time if selected
+
 ## Due 9/4
 
 - Clean Code: Various sources on the internet agree that clean code is easy to understand (for you, other coders, and beginners), and easy to maintain. It has clear meaning. Reusability and modularity are also important.
