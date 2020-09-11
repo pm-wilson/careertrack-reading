@@ -1,3 +1,33 @@
+## Due 9/14
+
+- Web Scraping JavaScript (https://www.scrapingbee.com/blog/web-scraping-javascript/)
+1. Request, Axios, and Superagent are examples of HTTP clients that work with node and JS
+2. You will need something to interpret the results of the data you scrape, and doing it manually can be tough. An HTML parser can help if you use regular expressions to look for a match. 
+3. Cheerio is a light weight and efficient library that uses JQuery on the server. It will not run css, javascript or render any dom elements.
+4. You might use Cheerio to fetch the dom element, then use text() to get the text
+5. JSDOM (npm install jsdom axios) can be used to interact with websites automatically and do things like click and manipulate the DOM, this can create a bot that goes around interacting with web sites.
+6. Puppeteer (npm install puppeteer) is a hight level API that controls a headless version of chrome. It can take screenshots or generate pdfs of pages, generate pre-rendered content, or automate user interactions (keyboard inputs, form submissions, navigation, etc)
+7. Nightmare (install nightmare) is another option for a high level browser automation
+8. To scrape and not get blocked you need to look more like a user to the target and less like a robot.
+9. The first thing to watch out for is the headers on your request.
+10. One option is to use a headless version of chrome, this will behave exactly like the browser. Selenium and Puppeteer are the two most common drivers for Headless Chrome
+11. Transport Layer Security (TLS) can give you away, you need to copy variables that are used typically in a given combination
+12. You also need to emulate human behaviour with proxy servers making multiple fast requests to come from different locations. The TOR network hides traffic well, but is often blocked or slow due to the rerouting it does. 
+13. Captchas might need to be solved with something like 2Captchas or DeathByCaptchas
+14. Requesting certain patterns or at certain rates can raise automated suspicion to your scraping
+
+- MDN - QuerySelector
+1. querySelector() returns the first element that matches the specified selector.
+2. Syntax: element = document.querySelector(selectors);
+3. The selectors must be a valid CSS selector string
+4. The match returns as an object
+
+- MDN - QuerySelectorAll
+1. querySelectorAll() returns an static array of all the elements that match the specific selector.
+2. Syntax: elementList = parentNode.querySelectorAll(selectors);
+3. The selectors must be a valid CSS selector string
+4. The matches can be accessed like an array
+
 ## Due 9/9
 
 - PostgreSQL Joins
