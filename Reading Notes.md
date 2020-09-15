@@ -1,3 +1,37 @@
+## Due 9/15
+
+- Redis (https://aws.amazon.com/redis/)
+
+1. Remote Ditionary Server is an open source key-value data store
+2. It keeps information in memory rather than on the hard drive to speed up response times
+3. Memcached is a similar open source data store, but doesn't offer the same features
+4. Redis data types include strings, lists, sets, sorted sets, hashes, bitmaps, hyperloglogs
+5. Redis is good for caching with its low latency, chat/messaging with its variety of data structures, gaming leaderboards with sorted sets, session storage with low latency and high scalability, media streaming with its ability to manifest files, geospacial tasks with data structures, Machine learning with its ability to process live data, and real time analytics by using it with Apache Kafka and Amazon Kinesis.
+6. It works well with JavaScript, Node, and many other languages
+7. AWS can fully manage it
+
+- Queue
+
+1. A data structure that handles elements in sequence like a stack
+2. Enqueue adds an item to the end of the line
+3. Dequeue takes an item away from the front of the line
+4. isEmpty() returns a boolean
+5. Top() returns the next in line
+
+- Task Queue Overview
+
+1. One kind of queue handles tasks one at a time until finished
+2. Another kind has the ability to schedule tasks for a specific time in the future
+
+- Task Queue - FIFO
+
+1. First in first out handles items in a queue in the order they were added, always doing the oldest item next
+2. Sometimes certain tasks have a higher priority and we would want those to skip to the front of the line
+3. Having three priority levels would let the highest priority items get handled first and the least priority messages sent when all others have been handled
+4. Sometimes it is good to reevaluate the queues, especially if one priority level tends to get more volume
+
+- Bull QUick Start
+
 ## Due 9/14
 
 - Web Scraping JavaScript (https://www.scrapingbee.com/blog/web-scraping-javascript/)
