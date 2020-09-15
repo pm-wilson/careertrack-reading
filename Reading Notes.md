@@ -32,6 +32,16 @@
 
 - Bull QUick Start
 
+1. Bull is a node library that uses a fast queue system with redis.
+2. Bull can be installed with (npm install bull --save)
+3. It needs a redis server running and can be installed using Docker
+4. a queue is created with (const myFirstQueue = new Bull('my-first-queue'))
+5. A producer is a node program that adds jobs to a queue
+6. A consumer or worker is a node program that defines a process
+7. Listeners listen to events that happen in the queue
+8. Job lifecycles are job added, wait/delayed, active, completed/failed, finished
+9. Jobs can be handled FIFO (default), LIFO, Delayed for an amount of time, Prioritized, Repeatable
+
 ## Due 9/14
 
 - Web Scraping JavaScript (https://www.scrapingbee.com/blog/web-scraping-javascript/)
