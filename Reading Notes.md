@@ -1,3 +1,48 @@
+## Due 9/21
+
+- http Basics (https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
+1. Hyper Text Transfer Protocol
+2. HTTP is a stateless protocol
+3. HTTP Verbs include the most popular: GET, POST, PUT, DELETE
+4. There are different error codes for various types of common errors.
+5. A request is sent with header information, request and response messages can also have a body
+6. Chrome with Webkit inspector is a favorite too to monitor HTTP communication
+
+- How DNS works (https://howdns.works/ep1/)
+1. Turns words into ip addresses
+2. When a pages is searched for, the browser and os check their cache to see if they know
+3. If not, it goes to a resolver online, it checks its cache, if not it checks the Top Level Domain Server
+4. If the TLD Server doesn't know, it checks one of 13 root name servers that exist today, labled a - m.root-servers.net
+5. The .com root server is one of the largest and created in 1985
+6. Other types have country codes, generic like .net .org .edu
+7. Today many new generic ones are being created
+8. If the root server doesn't know, it will give the authoritative name server for that site name
+9. When a domain is created the registrar creates the name and communicates to the TLD
+10. The authoritative name servers can be searched with a WHOIS query
+
+- http and rest
+1. API: Application Program Interface
+2. Structured request and response (the Messenger)
+3. REST: Representational State Transfer
+4. Architecture style for designing networked applications
+5. Almost always relies on HTTP
+6. Treats server objects as resources that can be created or destroyed
+7. Can be almost any language (format to send message)
+8. Endpoints are the URI/URL where api can be accessed by a client or app
+
+- http reference (https://code-maze.com/the-http-reference/)
+1. CONNECT: to use with a proxy that can dynamically switch to being a tunnel
+2. DELETE: requests a resource to be deleted
+3. GET: retrieves information
+4. HEAD: just like HEAD except the server MUST NOT return a message body in response
+5. OPTIONS: requesting communications options available
+6. POST: requests that the server accept the information as new information (creates)
+7. PUT: requests the information be stored (updates)
+8. TRACE: invokes a remote, application layer loop back of the request message
+
+- rest reference (https://www.restapitutorial.com/lessons/httpmethods.html)
+1. Post is used to create new resources
+
 ## Due 9/15
 
 - Redis (https://aws.amazon.com/redis/)
