@@ -1,3 +1,33 @@
+## Due 9/22
+
+- Using Express Routing (https://expressjs.com/en/guide/routing.html)
+1. Routing refers to how an applications endpoints (URI's) respond to client requests
+2. You can define routs using methods of the Express app object that corresponds to HTTP methods (get, post, delete, etc)
+3. These methods specify a callback/handler function
+4. Routing methods can have more than one callback function and are called with next()
+5. app.all() is used to load middleware functions for all HTTP methods
+6. Route paths can be strings, string patterns, or regular expressions
+7. Route parameters are named URL segments that target a specific route
+
+- Supertest (https://github.com/visionmedia/supertest)
+1. npm i supertest --save-dev
+2. called with require('supertest')
+
+- Using Express Middleware (https://expressjs.com/en/guide/using-middleware.html)
+1. Middleware functions have access to the request object (req), response object (res), and the next middleware function in the application's request-response cycle
+2. They can execute any code, make changes to the req/res objects, end the req/res cycle, or call the next middleware function in the stack
+3. If the middleware function doesnt call next or end the req/res cycle the request will be left hanging
+4. An Express application can use these types of middleware: Application-level, Router-level, Error-handling, Built-in, or Third-party
+
+- Express Middleware (https://www.tutorialspoint.com/expressjs/expressjs_middleware.htm)
+1. Middleware is called in order
+2. body-parser can be used to parse the body of requests that have payloads
+3. cookie-parser parses cookie header and populates req.cookies with an object keyed by cookie names
+4. express-session creates a session middleware with given options
+
+- Express Middleware List (https://expressjs.com/en/resources/middleware.html)
+1. Express middleware modules list that are maintained by the Expressjs team
+
 ## Due 9/21
 
 - http Basics (https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
