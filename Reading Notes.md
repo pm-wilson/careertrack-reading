@@ -1,3 +1,39 @@
+## Due 9/23
+- User Modeling
+1. Web developers have a duty to safely handle information
+2. Cryptography is the science of encoding messages
+3. A Cryptographic Hash Algorithm takes a piece of data and produces a hash that is deliberately difficult to reverse, if identical data is passed to it the same hash will always be returned.
+4. It takes a piece of data and a key to produce encrypted data. Later the data can be reversed into the original data by decrypting it using the same key.
+5. User tokens can be created by associating a random unique string (tokenSeed) with a user account and encrypting the tokenSeed with a secret key that only the server knows, then the encrypted token gets sent to a client application. The app then uses the token to make requests.
+6. Basic authorization is a common method used to send passwords and usernames on HTTP requests
+7. The username and password is joined and then base64 encoded using atob and btoa.
+8. let encoded = window.btoa('someUserName:Password')
+9. let decoded = window.atob('jksfjksdfjsldfjksd-passwordhash-skdfjksdlf')
+
+- Securing Passwords (unable to locate ip address)
+
+- Basic Access Authentication
+1. Basic Authentication doesn't provide any confidentiality protection, they are only encoded in base64 in transit. It must be used with HTTPS to provide confidentiality. 
+
+- JSON Web Token
+1. JWT is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. It can be verified and trusted because it is digitally signed using a secret (HMAC algorithm) or public/private key pair using RSA or ECDSA.
+2. These should be used for authorization or information exchange
+3. They consist of three parts header.payload.signature
+
+- Authentication Cheat Sheet (https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
+1. User ID's should be case-insensitive so Mike and mike are the same. They should also be unique and secret if it is high sensitivity
+2. Implement proper password strength controls
+3. Have a secure password recovery mechanism
+4. Store passwords in a secure fashion
+5. Use safe functions to compare hashes
+6. Transport passwords only over TLS or other strong transports
+7. Re-Authenticate for sensitive features
+
+- bcrypt docs
+1. npm install bcrypt
+2. hashes a password
+3. async mode is recommended
+
 ## Due 9/22
 
 - Using Express Routing (https://expressjs.com/en/guide/routing.html)
