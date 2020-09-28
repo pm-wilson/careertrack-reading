@@ -1,4 +1,4 @@
-## Due 9/27
+## Due 9/28
 - Why you should use bcrypt (https://medium.com/@danboterhoven/why-you-should-use-bcrypt-to-hash-passwords-af330100b861)
 1. Plain text passwords use only letters and often times users use the same password on multiple sites. If someone were to see the list they would see these passwords.
 2. One way hash passwords use a hashing algorithm to authenticate users. This is a far better password, but hackers can continue guessing.
