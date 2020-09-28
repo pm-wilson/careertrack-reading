@@ -1,3 +1,30 @@
+## Due 9/27
+- Why you should use bcrypt (https://medium.com/@danboterhoven/why-you-should-use-bcrypt-to-hash-passwords-af330100b861)
+1. Plain text passwords use only letters and often times users use the same password on multiple sites. If someone were to see the list they would see these passwords.
+2. One way hash passwords use a hashing algorithm to authenticate users. This is a far better password, but hackers can continue guessing.
+3. Salting the password is the next best things. It involves adding bits to the end of the password to make it harder to guess. If a hacker gets into your source code, they could get the salt data.
+4. Salting each user randomly is better, each user can get a new salt string when they create an account, it still has similar problems as above, but does take longer to break into multiple accounts.
+5. BCrypt is a cryptomatic algorithm that is like an adaptive hash function. Using a Key Factor, BCrypt can adjust the cost of hashing to remain resilient to hacks and scales up with ever faster and faster computers.
+
+- Understanding bcrypt (https://auth0.com/blog/hashing-in-action-understanding-bcrypt/)
+1. The bcrypt hashing function scales with computation power and hashes every password with a salt.
+2. Modern computers can compute millions to billions of hashes per second, instead of a fast function, we need a slow function. One that gets slower over time.
+3. The blowfish cypher that bcrypt is built on is a fast block cipher except when changing keys. In those cases it is slower than most hashing methods. This slows down brute force attacks
+4. This can be combined with a variable number of iterations to increase workload and duration of hash calculations. Over time this iteration count can be increased to make it even slower to diminish benefits of fast hardware.
+5. Phase 1: A function is set up using the desired cost, the salt, and the password.
+6. Phase 2: The magic value is the 192-bit value, which is encrypted 64 times in ECB mode with the sate from the previous phase. The output of this phase is the cost and the 128-bit salt value concatenated with the result of the encryption loop.
+7. If the accepted wait time for your app for registration and authentication is 1 second, tune bcrypt to run for 1 second on your hardware, then check with security team to see if that is enough to mitigate and slow down attacks.
+8. A typical computer would take 513 days to calculate a cost factor of 30 and it increases exponentially. 
+9.  Another layer of security is two factor, or multi factor authentication.
+10. npm i bcrypt
+
+- Where to store JWT (https://auth0.com/docs/tokens/token-storage)
+1. Securing SPAs that make API calls come with their own set of concerns. You'll need to ensure that tokens and other sensitive data are not vulnerable to cross-site scripting (XSS) and can't be read by malicious JavaScript
+2. Auth might be needed when you access a page, api route, when your app calls and an api hosted outside your app on behalf of the user
+3. When not using API calls, an id token can be sufficient. If making API calls on behalf of the user, access tokens and refresh tokens are needed and can be stored server side, or on cookies.
+4. KeyStore or KeyChain can make good places to store a token
+5. AuthO recommends storing tokens in browser memory as teh most secure option. Javascript closures can emulate private methods.
+
 ## Due 9/23
 - User Modeling
 1. Web developers have a duty to safely handle information
