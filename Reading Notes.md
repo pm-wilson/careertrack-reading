@@ -1,3 +1,18 @@
+## Due 9/29
+- Mongo Aggregations (https://docs.mongodb.com/manual/core/aggregation-pipeline/)
+1. The aggregation pipeline is a framework for data aggregation modeled on the concept of data processing pipelines. Documents enter a multi-stage pipeline that transforms the documents into aggregated results.
+2. It consists of stages. Each stage transforms the documents as they pass through the pipeline. Pipeline stages may generate new documents or filter out existing ones.
+3. It supports sharded collections
+4. It can replace map-reduce functions by using match, sort, group, merge, accumulator and function operators
+
+-Aggregations by Example (https://www.compose.com/articles/aggregations-in-mongodb-by-example/)
+1. Starting an aggregation pipeline is fairly simple, call the aggregate function on any collection.
+2. The $aggregate function accepts an array of data transformations applied in the order they're defined.
+3. Matching allows us to select only documents we want to target with $match
+4. After getting the documents we don't want removed, we can group the others together with $group
+5. $sum will sum a field in all the documents we have grouped together
+6. $gte is to find greater than and $lt is for less than
+
 ## Due 9/28
 - Why you should use bcrypt (https://medium.com/@danboterhoven/why-you-should-use-bcrypt-to-hash-passwords-af330100b861)
 1. Plain text passwords use only letters and often times users use the same password on multiple sites. If someone were to see the list they would see these passwords.
