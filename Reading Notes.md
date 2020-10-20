@@ -1,3 +1,57 @@
+## Due 10/20
+- setState Explained (https://css-tricks.com/understanding-react-setstate/)
+1. setState() is the only legit way to update state in react, do not modify state directly
+2. setState() will update only the information on the page that changes
+3. setState() only updates once so any conflicting declarations happening within the function will replace each other and then apply
+4. the new state will not be updated until it is re-rendered, so you will need to use an updater. prevState can be used to access what the state was before setState() was ran.
+5. When updating state multiple times, pass a function
+
+- Lists and Keys (https://reactjs.org/docs/lists-and-keys.html)
+1. map can be used to create multiple JSX elements to add to the page
+2. do not use indexes for the keys if the order of the items might change
+3. keys are used by react to figure out which children of an element have changed
+4. keys must be unique among siblings
+5. map can be used within {} inside JSX to create the elements
+
+- Typechecking Props (https://reactjs.org/docs/typechecking-with-proptypes.html)
+1. propTypes can be added to props to check the type
+2. example: Greeting.propTypes = { name: PropTypes.string }
+3. propTypes are only checked in development mode and if the types are incorrect it lets you know in the console
+4. propTypes can check for array, bool, func, number, object, string, symbol
+5. Prop.Types.element can specify that only a single child can be passed to a component as children
+6. defaultProps can set default prop values
+
+- Components and Props (https://reactjs.org/docs/components-and-props.html)
+1. Components let you split the UI into independent, reusable pieces and think about each piece in isolation
+2. components are like functions, props are like parameters
+3. React elements can represent user-defined components by passing props
+
+- handling events (https://reactjs.org/docs/handling-events.html)
+1. React events are named with camelCase
+2. With JSX you pass a function as the event handler, rather than a string
+3. preventDefault needs to be called to prevent the default
+4. When using this. with JSX callbacks this.handleClick needs to be bound and passed to the onClick or it will be undefined 
+5. to avoid using bind, you can add it in the class fields: <button onClick={this.handleClick}> or <button onClick={() => this.handleClick()}>
+6. with the second example above, another callback is created each time the user clicks so avoid this when you can.
+7. arguments can be passed to event handlers: <button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button> or <button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>
+
+- snapshot testing (https://jestjs.io/docs/en/snapshot-testing)
+1. snapshot tests are to make sure your ui doesnt change unexpectedly
+2. snapshot tests test the output of the component by itself, it doesnt test the data that will go into it
+3. when a change happens that breaks the test and the snapshot needs to be updated run 'jest --updateSnapshot'
+4. you need prettier installed to use inline snapshots
+5. Jests asymmetric matcher needs to be used to test properties
+6. treat snapshots as code and commit and change them as your code changes
+7. Date.now = jest.fn(() => 1482363367071); can be used to make sure a date is always passing, but changes in the app
+8. use descriptive snapshot names
+
+- React Testing Library (https://kentcdodds.com/blog/introducing-the-react-testing-library)
+1. tests should test what your functions do, not implementation details
+2. react-testing-library encourages better testing practices
+3. it tests dom nodes and queries it in the same way a user would
+4. tests should test how the user would use the app
+5. 
+
 ## Due 10/19
 - Intro to Webpack (https://www.freecodecamp.org/news/an-intro-to-webpack-what-it-is-and-how-to-use-it-8304ecdc3c60/)
 1. Webpack is a static module bundler and makes sure the browser understands all the code.
