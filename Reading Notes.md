@@ -1,3 +1,38 @@
+## Due 10/21
+- Architectural Styles and Architectural Patterns (https://medium.com/@mlbors/architectural-styles-and-architectural-patterns-c240f7df88a0#:~:text=Architectural%20Patterns%20VS%20Design%20Patterns&text=In%20a%20few%20words%2C%20while,and%20mechanisms%20of%20a%20system.)
+1. An Architectural pattern is general recurring solution to a recurring problem
+2. They look at the high level strategies for large scale components
+3. The layered pattern tends to have a presentation, application, business logic, and data access layers
+4. event driven patterns look at consumers and emitters of events
+5. the business domain is where all the business logic and processes are
+6. pipes and filters transform, filter, and connects data
+7. pumps are data sources and sinks are final targets
+8. microservice is an application built by many independent apps.
+
+- Container and Presentation Patterns (https://alchemycodelab.github.io/fsjs-notes/05_react/patterns/container_presentation/)
+1. container components are concerned with how things work
+2. presentation components are concerned with how things look
+
+- Container Details (https://alchemycodelab.github.io/fsjs-notes/05_react/patterns/container_presentation/container-details)
+1. independent state changes can be passed to setState() as an object
+2. dependent state changes (like a button increment) can be passed as a function that takes in state
+3. containers can also be written as hooks instead of components
+
+- Presentation Details (https://alchemycodelab.github.io/fsjs-notes/05_react/patterns/container_presentation/presentation-details)
+1. presentation components are responsible for how a section of the page looks
+2. they are written as functional components and return the markup that is going to get rendered to the dom
+3. they usually receive props to make them reusable and we shoudl use prop-types to specify the props the component receives
+
+- functional vs class components (https://medium.com/@Zwenza/functional-vs-class-components-in-react-231e3fbd7108)
+1. the big difference is that you need a class component for state
+2. when you dont need state, functional components are easier to read and test and might be faster in the future
+
+- Conditional Rendering (https://reactjs.org/docs/conditional-rendering.html)
+1. conditional rendering is when you use different components based on conditions to make the page look different
+2. you can use it inline with && for if
+3. for if else use a turnary
+4. returning null can hide a component
+
 ## Due 10/20
 - setState Explained (https://css-tricks.com/understanding-react-setstate/)
 1. setState() is the only legit way to update state in react, do not modify state directly
