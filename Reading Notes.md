@@ -1,3 +1,26 @@
+##Due 10/22
+- MVC (https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
+Model view controller is a software design pattern that divides the app into three elements
+1. Model manages the data, logic and rules
+2. View represent information (charts and tables)
+3. Controller accepts inputs and coverts them to commands for the model or view
+
+- Architecting Single Page Applications (https://hackernoon.com/architecting-single-page-applications-b842ea633c2e)
+There are 4 layers to manage for single page applications
+1. View has the presentational and container components 
+2. Application Services interprets the state and manages external operations
+3. Store holds the state and notifies about changes
+4. Domain represents the state and manages business logic
+
+- React MVC (https://blog.testdouble.com/posts/2019-11-04-react-mvc/) 
+1. When apps are totally rewritten in hooks, the components had too much information. they knew API backend data model and business logic and the components had to be updated whenever any of those changed
+2. MVC was the answer and it breaks down to a presentation layer and a UI data model.
+
+- Reconciliation (https://reactjs.org/docs/reconciliation.html)
+1. keys make react stable across different renders
+2. reorders will be slow if the key is the iterator or always changing
+3. keys should be stable predictable, and unique
+
 ## Due 10/21
 - Architectural Styles and Architectural Patterns (https://medium.com/@mlbors/architectural-styles-and-architectural-patterns-c240f7df88a0#:~:text=Architectural%20Patterns%20VS%20Design%20Patterns&text=In%20a%20few%20words%2C%20while,and%20mechanisms%20of%20a%20system.)
 1. An Architectural pattern is general recurring solution to a recurring problem
