@@ -1,4 +1,31 @@
-##Due 10/22
+## Due 10/26
+- Hooks API (https://reactjs.org/docs/hooks-overview.html)
+1. Hooks let you use state without class and are backwards compatable
+2. useState() is a hook and is similar to this.setState()
+3. hooks do not work in classes
+4. only call hooks at the top level, not inside loops, conditions or nested functions
+5. only call hooks from function components
+6. they are named as useSomething
+
+- State Hook (https://reactjs.org/docs/hooks-state.html)
+1. you can use hooks in a functional component above the return
+2. the initial value of state gets set in the parenthesis useState(<here>) and doesnt have to be an object, but can be
+3. const [variableName, functionToChangeValue] = useState()
+4. this.state.variableName reads it
+5. functionToChangeValue(variableName + 1) will increment it
+
+- Effects Hook (https://reactjs.org/docs/hooks-effect.html)
+1. useEffect does something after every render
+2. every render will create a new function call and replace the previous instance
+useEffect(() => {
+    document.title = `You clicked ${count} times`;
+  });
+
+- Hooks API Reference (https://reactjs.org/docs/hooks-reference.html)
+1. useReducer(reducer, initialArg, init) is usually better than useState when you have complex state logic or when next state depends on the previous one
+2. useMemo will only recompute if the dependencies have changed
+
+## Due 10/22
 - MVC (https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
 Model view controller is a software design pattern that divides the app into three elements
 1. Model manages the data, logic and rules
