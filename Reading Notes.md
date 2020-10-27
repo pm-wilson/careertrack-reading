@@ -1,3 +1,31 @@
+## Due 10/27
+- react custom hooks (https://reactjs.org/docs/hooks-custom.html)
+1. a custom hook starts with use and can call other hooks
+2. two components using the same hook do not share state
+3. data can be passed between hooks with the parameters
+
+- hook rules (https://reactjs.org/docs/hooks-rules.html)
+1. only call hooks at the top level
+2. put any conditions inside the hook
+
+- custom hooks - all you need to know (https://www.telerik.com/kendo-react-ui/react-hooks-guide/#toc-custom-react-hooks)
+1. never call hooks from a regular function
+2. hooks clean up our jsx code to make it match the DOM better
+3. functional components can have a const above the jsx
+4. the reducer hook returns the accumulation of something
+
+- 10 essential react hooks (https://blog.bitsrc.io/10-react-custom-hooks-you-should-have-in-your-toolbox-aa27d3f5564d?gi=c4033b42b5da)
+1. useArray, yarn add react-hanger, import {useArray} from 'react-hanger', this comes with array methods
+2. react-use-form-state, npm i react-use-form-state, simplifies complex state management
+3. react-fetch-hook, npm i react-fetch-hook, makes ajax calls
+4. useMedia, tracks the state of a css media query
+5. react-useportal, yarn add react-useportal, renders children into a DOM node that is outside the DOM hierarchy of the parent
+6. react-firebase-hooks, npm i react-firebase-hooks, firebase authentication or storage
+7. use-onClickOutside, tells when a user clicks on anything besides a specific element
+8. useIntersectionObserver, npm i react-use-intersection-observer, asynchronously watches changes between an element and an ancestor or document viewport
+9. use-location, gets the location of the browser
+10. use-redux, yarn add use-redux, redux reader
+
 ## Due 10/26
 - Hooks API (https://reactjs.org/docs/hooks-overview.html)
 1. Hooks let you use state without class and are backwards compatable
