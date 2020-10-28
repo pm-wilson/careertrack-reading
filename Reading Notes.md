@@ -1,3 +1,10 @@
+## Due 10/28
+- context api
+1. Context is a way to pass data through the component tree without having to pass props down manually at every level
+2. it should be used for global variables
+3. should be used when multiple components need the data at different nesting levels
+4. every context object comes with a provider component, they will all rerender whenever the providers value prop changes
+
 ## Due 10/27
 - react custom hooks (https://reactjs.org/docs/hooks-custom.html)
 1. a custom hook starts with use and can call other hooks
