@@ -1,5 +1,11 @@
+## Due 10/29
+- Composition vs Inheritance (https://reactjs.org/docs/composition-vs-inheritance.html)
+1. When a component doesnt know their children ahead of time like a sidebar, using prop to pass children elements is recommended
+2. React elements can be passed like any other data
+3. It is suggested that to reuse non-UI functionality between components, to extract it into a separate JS module and import it.
+
 ## Due 10/28
-- context api
+- context api (https://reactjs.org/docs/context.html)
 1. Context is a way to pass data through the component tree without having to pass props down manually at every level
 2. it should be used for global variables
 3. should be used when multiple components need the data at different nesting levels
